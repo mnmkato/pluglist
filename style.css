@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.header{
+    background-color: brown;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1{
+    color: azure;
+    margin-left: 1rem;
+}
+.header button{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 1rem;
+    background-color: brown;
+    color: azure;
+    border: 0.2rem solid;
+    margin-right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.header button:hover{
+    background-color: rgb(122, 49, 49);
+}
+.header button:active{
+    background-color: rgb(82, 33, 33);
+}
+.inactive{
+    display: none;
+}
+.plug{
+    background-color: aqua;
+    margin: 1rem;
+
+}
+.category{
+    background-color: antiquewhite;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.category h3{
+    margin-top: 0.2rem;
+    margin-bottom: 00.2rem;
+}
+
+.item{
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+.item img{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+}
+
+.addContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(179, 131, 131);
+    margin-top: 5rem;
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 0;
+    height: calc(100vh - 5rem);
+    color: azure;
+}
+.addContainer form{
+    width: 50vh;
+    padding: 2rem;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+}
+.addContainer input,.addContainer button{
+    padding: 0.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    line-height: 1.5rem;
+    border: 0;
+}
+
+.addContainer div{
+    background-color: burlywood;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
